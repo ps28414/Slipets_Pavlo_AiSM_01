@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>My page</title>
+        <script src="kalkulator.js"></script>
+        <script src="node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"></link>
+        <h1></h1>
+    </head>
+    <body y onload="alert(typeof jQuery)">
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Dodawanie</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="odejmowanie.html">Odejmowanie</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="mnożenie.html">Mnożenie</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="dzielenie.html">Dzielenie</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Potęgowanie</a>
+            </li>
+          </ul>
+          <h1></h1>
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-3 bg-success">
+                A:
+                <form method="post" action="">
+                    <p><input name="textfield" type="text" id="num9"></p>
+                </form>
+            </div>
+            <div class="col-3 bg-warning">
+                B:
+                <form method="post" action="">
+                    <p><input name="textfield" type="text" id="num10"></p>
+                </form>
+            </div>
+            <div class="col-3 bg-primary">
+                Result:
+                <form method="post" action="">
+                    <p id="result5"></p>
+                </form>
+            </div>
+            <div class="col-1">
+                <form>
+                    <p><input type="button" class="b1" value="A^B" onclick="potęgowanie()"></p>
+                </form>
+            </div>
+          </div>
+    </body>
+</html>
